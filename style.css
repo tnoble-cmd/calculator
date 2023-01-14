@@ -1,0 +1,108 @@
+.calculator{
+  box-shadow: 5px 5px 12px rgb(0 0 0 / 50%);
+  border-radius: 1rem;    
+  justify-content: center;
+  text-align: center;
+  margin: 5rem auto;
+  margin-bottom: 2rem;
+  
+    
+}
+.calculator .allbuttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+
+    background: #212121;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+}
+
+
+
+.calculator .screen{
+    background:#212121;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.screen .calc-display{
+    width: 100%;
+    border: 0px;
+    background: #3b3b3b;
+    border-radius: 0.725rem;
+    padding: 0.65rem;
+    box-shadow: inset 2px 3px 5px 0px rgb(0 0 0 / 70%);
+    outline: none;
+}
+
+.calc-display output{
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: aliceblue;
+}
+
+output#input{
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: right;
+    color:aliceblue;
+    
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+    margin: 5rem auto;
+    margin-bottom: 2rem;
+}
+
+.child{
+    max-width: 300px;
+    width: 100%; 
+}
+
+*, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background:#ecccec;
+}
+
+div{
+    display: block;
+}
+
+.allbuttons button{
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    font-weight: 700;
+    background: #3b3b3b;
+    border: 0px solid transparent;
+    outline: none;
+    border-radius: 100%;
+    box-shadow: 4px 5px 5px 0px rgb(0 0 0 / 50%);
+    color: aliceblue;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+
+
+footer{
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: -1px 1.5px 0px rgb(0 0 0 / 40%);
+}
+
+button.equals{
+    grid-column: 3/5;
+    border-radius: 2.5rem;
+}
